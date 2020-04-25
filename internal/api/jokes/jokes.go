@@ -34,5 +34,5 @@ func (jc *JokeClient) GetJoke() (*api.JokeResponse, error) {
 
 	err = json.NewDecoder(resp.Body).Decode(&data)
 
-	return &data, nil
+	return &data, err
 }
