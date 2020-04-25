@@ -14,7 +14,7 @@ type JokeClient struct {
 	url string
 }
 
-func NewJokeClinet(baseUrl string) &JokeClient {
+func NewJokeClient(baseUrl string) *JokeClient {
 	return &JokeClient{
 		url: baseUrl,
 	}
