@@ -18,6 +18,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	apiClinet := jokes.NewJokeClient(cfg.JokeURL)
+
 	h := handler.NewHandler()
 	r := chi.NewRouter()
 
